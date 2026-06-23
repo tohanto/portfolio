@@ -33,9 +33,9 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['"Inter"', '"Noto Sans SC"', 'system-ui', 'sans-serif'],
-        display: ['"Inter"', '"Noto Sans SC"', 'system-ui', 'sans-serif'],
-        mono: ['"JetBrains Mono"', '"Fira Code"', 'monospace'],
+        sans: ['-apple-system', 'BlinkMacSystemFont', '"PingFang SC"', '"Microsoft YaHei"', '"Helvetica Neue"', 'sans-serif'],
+        display: ['-apple-system', 'BlinkMacSystemFont', '"PingFang SC"', '"Microsoft YaHei"', '"Helvetica Neue"', 'sans-serif'],
+        mono: ['"SF Mono"', '"Fira Code"', '"Courier New"', 'monospace'],
       },
       fontSize: {
         'hero': ['clamp(3rem, 6vw, 4.5rem)', { lineHeight: '1', letterSpacing: '-0.02em', fontWeight: '700' }],

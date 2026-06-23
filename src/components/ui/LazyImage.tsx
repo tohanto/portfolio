@@ -19,7 +19,7 @@ export function LazyImage({ src, alt, className, aspectRatio, containerClassName
   useIntersectionObserver({
     target: containerRef,
     onIntersect: () => setIsVisible(true),
-    rootMargin: '300px',
+    rootMargin: '600px',
     enabled: !isVisible,
   });
 
