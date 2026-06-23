@@ -2,12 +2,13 @@ import { useProjectData } from '@/hooks/useProjectData';
 import { LazyImage } from '@/components/ui/LazyImage';
 import { ImageCarousel } from '@/components/ui/ImageCarousel';
 import { Link } from 'react-router-dom';
+import { assetPath } from '@/utils/assetPath';
 
 const HERO_IMAGES = [
-  '/01建筑设计/01轻宋产品手册/封面.png',
-  '/01建筑设计/02社区活动中心/封面.png',
-  '/01建筑设计/03室内设计/封面.png',
-  '/01建筑设计/04绿色高层设计/封面1.png',
+  assetPath('/01建筑设计/01轻宋产品手册/封面.png'),
+  assetPath('/01建筑设计/02社区活动中心/封面.png'),
+  assetPath('/01建筑设计/03室内设计/封面.png'),
+  assetPath('/01建筑设计/04绿色高层设计/封面1.png'),
 ];
 
 export default function ArchitecturePage() {

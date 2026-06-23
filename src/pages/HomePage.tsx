@@ -6,6 +6,7 @@ import { HomeHero } from '@/components/sections/HomeHero';
 import { PersonalIntro } from '@/components/sections/PersonalIntro';
 import { ContactModule } from '@/components/ui/ContactModule';
 import { LazyImage } from '@/components/ui/LazyImage';
+import { assetPath } from '@/utils/assetPath';
 
 /* ───────────────────────────────────────────
  * HomePage — 1:1 Pixso 2:2 (PC首页)
@@ -19,7 +20,7 @@ const FEATURED = [
     label: '建筑设计',
     title: '地产公司轻宋产品手册制作',
     description: '宋式美学现代转译，打造适配现代人居的轻宋风格地产产品标准化手册。',
-    cover: '/01建筑设计/01轻宋产品手册/封面.png',
+    cover: assetPath('/01建筑设计/01轻宋产品手册/封面.png'),
   },
   {
     id: 'shining-wandering',
@@ -27,7 +28,7 @@ const FEATURED = [
     label: '游戏设计',
     title: '《闪灵》场景还原与空间漫游demo',
     description: '复刻经典电影的标志性建筑空间，搭建空间漫游demo，在沉浸式探索中重构空间的叙事张力。',
-    cover: '/02游戏设计/shining/封面.png',
+    cover: assetPath('/02游戏设计/shining/封面.png'),
   },
   {
     id: 'ai-recruitment',
@@ -35,7 +36,7 @@ const FEATURED = [
     label: 'AI辅助',
     title: 'AI人才招聘游戏方案设计demo',
     description: '利用生成式AI工具驱动的游戏化群面招聘方案设计，重构人才招聘的互动体验。',
-    cover: '/03AI辅助/sunshine/01封面.jpg',
+    cover: assetPath('/03AI辅助/sunshine/01封面.jpg'),
   },
 ];
 

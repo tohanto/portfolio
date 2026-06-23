@@ -1,11 +1,33 @@
 import { useMemo } from 'react';
 import type { Category, Project, ArtItem } from '@/types';
 import projectsData from '@/data/projects.json';
+import { assetPath } from '@/utils/assetPath';
 
-const projects = projectsData as Project[];
+/**
+ * Deep-transform all string fields in an object/array:
+ * any string starting with "/" is passed through assetPath().
+ */
+function transformPaths<T>(data: T): T {
+  if (typeof data === 'string') {
+    return (data.startsWith('/') ? assetPath(data) : data) as unknown as T;
+  }
+  if (Array.isArray(data)) {
+    return data.map(transformPaths) as unknown as T;
+  }
+  if (data !== null && typeof data === 'object') {
+    const result: Record<string, unknown> = {};
+    for (const key of Object.keys(data as Record<string, unknown>)) {
+      result[key] = transformPaths((data as Record<string, unknown>)[key]);
+    }
+    return result as T;
+  }
+  return data;
+}
 
-// Art items — real images from public/04视觉艺术/
-const artItems: ArtItem[] = [
+const projects = transformPaths(projectsData as Project[]);
+
+// Art items — transformed for BASE_URL
+const artItems: ArtItem[] = transformPaths([
   // 绘画 (14 items)
   { id: 'painting-1', src: '/04视觉艺术/绘画/1.jpg', alt: '绘画作品1', filter: '绘画', aspectRatio: 3/4 },
   { id: 'painting-2', src: '/04视觉艺术/绘画/2.jpg', alt: '绘画作品2', filter: '绘画', aspectRatio: 3/4 },
@@ -27,7 +49,7 @@ const artItems: ArtItem[] = [
   { id: 'photo-3', src: '/04视觉艺术/摄影/sy3.png', alt: '摄影作品3', filter: '摄影', aspectRatio: 4/3 },
   // 海报设计 (1 item)
   { id: 'poster-1', src: '/04视觉艺术/海报设计/文创海报.png', alt: '文创海报设计', filter: '海报设计', aspectRatio: 2/3 },
-];
+]);
 
 export function useProjectData() {
   const getAllProjects = useMemo(() => () => projects, []);

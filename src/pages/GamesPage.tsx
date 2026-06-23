@@ -1,6 +1,7 @@
 import { useProjectData } from '@/hooks/useProjectData';
 import { LazyImage } from '@/components/ui/LazyImage';
 import { Link } from 'react-router-dom';
+import { assetPath } from '@/utils/assetPath';
 
 export default function GamesPage() {
   const { getProjectsByCategory } = useProjectData();
@@ -11,7 +12,7 @@ export default function GamesPage() {
       {/* Hero image */}
       <div className="relative w-full h-[600px] bg-surface overflow-hidden">
         <LazyImage
-          src="/02游戏设计/shining/封面.png"
+          src={assetPath("/02游戏设计/shining/封面.png")}
           alt="游戏设计"
           containerClassName="w-full h-full"
         />

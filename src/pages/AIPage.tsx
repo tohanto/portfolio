@@ -1,6 +1,7 @@
 import { useProjectData } from '@/hooks/useProjectData';
 import { LazyImage } from '@/components/ui/LazyImage';
 import { Link } from 'react-router-dom';
+import { assetPath } from '@/utils/assetPath';
 
 export default function AIPage() {
   const { getProjectsByCategory } = useProjectData();
@@ -11,7 +12,7 @@ export default function AIPage() {
       {/* Hero image */}
       <div className="relative w-full h-[600px] bg-surface overflow-hidden">
         <LazyImage
-          src="/03AI辅助/sunshine/01封面.jpg"
+          src={assetPath("/03AI辅助/sunshine/01封面.jpg")}
           alt="AI辅助"
           containerClassName="w-full h-full"
         />

@@ -1,6 +1,7 @@
 import { LazyImage } from '@/components/ui/LazyImage';
 import SplitText from '@/components/ui/SplitText';
 import { Link } from 'react-router-dom';
+import { assetPath } from '@/utils/assetPath';
 
 /* ───────────────────────────────────────────
  * AboutPage — 1:1 Pixso 2:67 (关于我)
@@ -18,7 +19,7 @@ export default function AboutPage() {
           {/* Left: Photo — Pixso 2:69, 606px wide */}
           <div className="w-[606px] max-md:w-full h-[692px] max-md:h-80 shrink-0 relative overflow-hidden bg-surface">
             <LazyImage
-              src="/00个人简介/01基本信息/生活照3.jpg"
+              src={assetPath("/00个人简介/01基本信息/生活照3.jpg")}
               alt="杨涵"
               containerClassName="w-full h-full"
               className="object-cover"
@@ -135,7 +136,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <div className="w-[45%] max-lg:w-full shrink-0 h-[300px] max-lg:h-48 rounded-lg overflow-hidden">
-                <LazyImage src="/00个人简介/03实践经历/平台.png" alt="智能城市设计平台" containerClassName="w-full h-full" className="object-cover" />
+                <LazyImage src={assetPath("/00个人简介/03实践经历/平台.png")} alt="智能城市设计平台" containerClassName="w-full h-full" className="object-cover" />
               </div>
             </div>
           </div>
@@ -157,7 +158,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <Link to="/ai/ai-recruitment" className="w-[45%] max-lg:w-full shrink-0 h-[300px] max-lg:h-48 rounded-lg overflow-hidden block">
-                <LazyImage src="/03AI辅助/sunshine/01封面.jpg" alt="vibe coding人才招聘" containerClassName="w-full h-full" className="object-cover hover:opacity-90 transition-opacity" />
+                <LazyImage src={assetPath("/03AI辅助/sunshine/01封面.jpg")} alt="vibe coding人才招聘" containerClassName="w-full h-full" className="object-cover hover:opacity-90 transition-opacity" />
               </Link>
             </div>
           </div>
@@ -179,7 +180,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <Link to="/architecture/qing-song" className="w-[45%] max-lg:w-full shrink-0 h-[300px] max-lg:h-48 rounded-lg overflow-hidden block">
-                <LazyImage src="/01建筑设计/01轻宋产品手册/封面.png" alt="轻宋产品手册" containerClassName="w-full h-full" className="object-cover hover:opacity-90 transition-opacity" />
+                <LazyImage src={assetPath("/01建筑设计/01轻宋产品手册/封面.png")} alt="轻宋产品手册" containerClassName="w-full h-full" className="object-cover hover:opacity-90 transition-opacity" />
               </Link>
             </div>
           </div>
@@ -207,7 +208,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <Link to="/games/shining-wandering" className="w-[45%] max-lg:w-full shrink-0 h-[300px] max-lg:h-48 rounded-lg overflow-hidden block">
-                <LazyImage src="/02游戏设计/shining/封面.png" alt="闪灵场景还原" containerClassName="w-full h-full" className="object-cover hover:opacity-90 transition-opacity" />
+                <LazyImage src={assetPath("/02游戏设计/shining/封面.png")} alt="闪灵场景还原" containerClassName="w-full h-full" className="object-cover hover:opacity-90 transition-opacity" />
               </Link>
             </div>
           </div>

@@ -4,14 +4,15 @@ import { useProjectData } from '@/hooks/useProjectData';
 import { FilterTags } from '@/components/ui/FilterTags';
 import { MasonryGrid } from '@/components/ui/MasonryGrid';
 import { ImageCarousel } from '@/components/ui/ImageCarousel';
+import { assetPath } from '@/utils/assetPath';
 
 const FILTER_OPTIONS: ArtFilter[] = ['全部', '绘画', '摄影', '海报设计'];
 
 const HERO_IMAGES = [
-  '/04视觉艺术/海报设计/文创海报.png',
-  '/04视觉艺术/绘画/1.jpg',
-  '/04视觉艺术/绘画/9.jpg',
-  '/04视觉艺术/摄影/sy2.png',
+  assetPath('/04视觉艺术/海报设计/文创海报.png'),
+  assetPath('/04视觉艺术/绘画/1.jpg'),
+  assetPath('/04视觉艺术/绘画/9.jpg'),
+  assetPath('/04视觉艺术/摄影/sy2.png'),
 ];
 
 export default function ArtPage() {
