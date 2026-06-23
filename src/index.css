@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-canvas-white text-ink font-sans;
+    margin: 0;
+    padding: 0;
+  }
+
+  ::selection {
+    @apply bg-signal-soft text-ink;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-signal;
+    outline-style: solid;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto max-w-container px-6 sm:px-8 lg:px-10 xl:px-[60px];
+  }
+
+  .container-narrow {
+    @apply mx-auto max-w-narrow px-6 sm:px-8;
+  }
+
+  .section-pad {
+    @apply py-section;
+  }
+
+  .card {
+    @apply bg-canvas-white border border-rule overflow-hidden;
+    @apply transition-all duration-300 ease-out;
+    @apply hover:shadow-card-hover;
+  }
+}
+
+@layer utilities {
+  .scroll-mt-header {
+    scroll-margin-top: 64px;
+  }
+}
