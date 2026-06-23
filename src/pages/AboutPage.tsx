@@ -19,7 +19,7 @@ export default function AboutPage() {
           {/* Left: Photo — Pixso 2:69, 606px wide */}
           <div className="w-[606px] max-md:w-full h-[692px] max-md:h-80 shrink-0 relative overflow-hidden bg-surface">
             <LazyImage
-              src={assetPath("/00个人简介/01基本信息/生活照3.jpg")}
+              src={assetPath("/00个人简介/01基本信息/生活照3.webp")}
               alt="杨涵"
               containerClassName="w-full h-full"
               className="object-cover"
@@ -158,7 +158,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <Link to="/ai/ai-recruitment" className="w-[45%] max-lg:w-full shrink-0 h-[300px] max-lg:h-48 rounded-lg overflow-hidden block">
-                <LazyImage src={assetPath("/03AI辅助/sunshine/01封面.jpg")} alt="vibe coding人才招聘" containerClassName="w-full h-full" className="object-cover hover:opacity-90 transition-opacity" />
+                <LazyImage src={assetPath("/03AI辅助/sunshine/01封面.webp")} alt="vibe coding人才招聘" containerClassName="w-full h-full" className="object-cover hover:opacity-90 transition-opacity" />
               </Link>
             </div>
           </div>

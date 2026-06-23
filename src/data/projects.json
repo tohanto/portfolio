@@ -8,7 +8,7 @@
     "coverSrc": "/01建筑设计/01轻宋产品手册/封面.webp",
     "heroMode": "image",
     "detailLayout": "longImage",
-    "longImage": "/01建筑设计/01轻宋产品手册/轻宋产品手册_00.jpg",
+    "longImage": "/01建筑设计/01轻宋产品手册/轻宋产品手册_00.webp",
     "detail": {
       "screenshots": [],
       "pdfUrl": "/01建筑设计/01轻宋产品手册/轻宋产品手册.pdf"
@@ -24,7 +24,7 @@
     "coverSrc": "/01建筑设计/04绿色高层设计/封面1.webp",
     "heroMode": "image",
     "detailLayout": "longImage",
-    "longImage": "/01建筑设计/04绿色高层设计/高层_00.jpg",
+    "longImage": "/01建筑设计/04绿色高层设计/高层_00.webp",
     "detail": {
       "screenshots": [],
       "pdfUrl": "/01建筑设计/04绿色高层设计/高层.pdf"
@@ -40,7 +40,7 @@
     "coverSrc": "/01建筑设计/03室内设计/封面.webp",
     "heroMode": "image",
     "detailLayout": "longImage",
-    "longImage": "/01建筑设计/03室内设计/室内设计_00.jpg",
+    "longImage": "/01建筑设计/03室内设计/室内设计_00.webp",
     "detail": {
       "screenshots": [],
       "pdfUrl": "/01建筑设计/03室内设计/室内设计.pdf"
@@ -56,7 +56,7 @@
     "coverSrc": "/01建筑设计/02社区活动中心/封面.webp",
     "heroMode": "image",
     "detailLayout": "longImage",
-    "longImage": "/01建筑设计/02社区活动中心/活动中心_00.jpg",
+    "longImage": "/01建筑设计/02社区活动中心/活动中心_00.webp",
     "detail": {
       "screenshots": [],
       "pdfUrl": "/01建筑设计/02社区活动中心/活动中心.pdf"
@@ -75,7 +75,7 @@
     "heroVideo": "/02游戏设计/shining/25.04-SHINING_wandering2.0.MP4",
     "heroVideoPoster": "/02游戏设计/shining/封面.webp",
     "detailLayout": "videos+longImage",
-    "longImage": "/02游戏设计/shining/shining_00.jpg",
+    "longImage": "/02游戏设计/shining/shining_00.webp",
     "detailVideos": [
       {
         "title": "Twinmotion全部场景展示短片，《闪灵》场景还原与漫游",
@@ -110,7 +110,7 @@
     "heroVideo": "/02游戏设计/警察局/UE5录屏.mp4",
     "heroVideoPoster": "/02游戏设计/警察局/封面.webp",
     "detailLayout": "videos+longImage",
-    "longImage": "/02游戏设计/警察局/警察局_00.jpg",
+    "longImage": "/02游戏设计/警察局/警察局_00.webp",
     "detailVideos": [
       {
         "title": "UE5场景演示短片",
@@ -161,14 +161,14 @@
     "title": "AI人才招聘游戏方案设计demo",
     "description": "利用生成式AI工具驱动的游戏化群面招聘方案设计，重构人才招聘的互动体验。",
     "coverType": "video",
-    "coverSrc": "/03AI辅助/sunshine/01封面.jpg",
-    "coverPoster": "/03AI辅助/sunshine/01封面.jpg",
+    "coverSrc": "/03AI辅助/sunshine/01封面.webp",
+    "coverPoster": "/03AI辅助/sunshine/01封面.webp",
     "heroMode": "video",
     "heroVideo": "/03AI辅助/sunshine/AI人才招聘游戏demo演示视频.mp4",
-    "heroVideoPoster": "/03AI辅助/sunshine/01封面.jpg",
+    "heroVideoPoster": "/03AI辅助/sunshine/01封面.webp",
     "detailLayout": "images",
     "detailImages": [
-      { "src": "/03AI辅助/sunshine/01封面.jpg", "alt": "点击体验游戏", "link": "https://tohanto.github.io/demo/" },
+      { "src": "/03AI辅助/sunshine/01封面.webp", "alt": "点击体验游戏", "link": "https://tohanto.github.io/demo/" },
       { "src": "/03AI辅助/sunshine/floor_1f.webp", "alt": "一层平面" },
       { "src": "/03AI辅助/sunshine/floor_2f.webp", "alt": "二层平面" },
       { "src": "/03AI辅助/sunshine/floor_b1.webp", "alt": "地下一层平面" }
@@ -177,7 +177,7 @@
       {
         "title": "游戏化群面demo讲解视频",
         "src": "/03AI辅助/sunshine/AI人才招聘游戏demo演示视频.mp4",
-        "poster": "/03AI辅助/sunshine/01封面.jpg"
+        "poster": "/03AI辅助/sunshine/01封面.webp"
       }
     ],
     "detail": {
@@ -207,7 +207,7 @@
         "items": [
           { "type": "comparison", "beforeSrc": "/03AI辅助/AI生图/合集1_sunshine/before_1.webp", "afterSrc": "/03AI辅助/AI生图/合集1_sunshine/after_1.webp", "beforeLabel": "Before", "afterLabel": "After" },
           { "type": "image", "src": "/03AI辅助/AI生图/合集1_sunshine/1.webp", "alt": "邻里中心-1" },
-          { "type": "image", "src": "/03AI辅助/AI生图/合集1_sunshine/2.jpg", "alt": "邻里中心-2" },
+          { "type": "image", "src": "/03AI辅助/AI生图/合集1_sunshine/2.webp", "alt": "邻里中心-2" },
           { "type": "comparison", "beforeSrc": "/03AI辅助/AI生图/合集2_校门/before_1.webp", "afterSrc": "/03AI辅助/AI生图/合集2_校门/after_1.webp", "beforeLabel": "Before", "afterLabel": "After" },
           { "type": "image", "src": "/03AI辅助/AI生图/合集2_校门/1.webp", "alt": "校门-1" },
           { "type": "image", "src": "/03AI辅助/AI生图/合集2_校门/2.webp", "alt": "校门-2" },
@@ -230,7 +230,7 @@
         "items": [
           { "type": "comparison", "beforeSrc": "/03AI辅助/AI生图/合集1_sunshine/before_1.webp", "afterSrc": "/03AI辅助/AI生图/合集1_sunshine/after_1.webp", "beforeLabel": "Before", "afterLabel": "After" },
           { "type": "image", "src": "/03AI辅助/AI生图/合集1_sunshine/1.webp", "alt": "邻里中心" },
-          { "type": "image", "src": "/03AI辅助/AI生图/合集1_sunshine/2.jpg", "alt": "邻里中心" }
+          { "type": "image", "src": "/03AI辅助/AI生图/合集1_sunshine/2.webp", "alt": "邻里中心" }
         ]
       },
       {

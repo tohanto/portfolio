@@ -28,7 +28,7 @@ export function PersonalIntro() {
         {/* Right: Photo column — 720px wide, matching Pixso 2:29 */}
         <div className="w-1/2 max-md:w-full h-[692px] max-md:h-80 relative overflow-hidden bg-surface">
           <LazyImage
-            src={assetPath("/00个人简介/01基本信息/生活照.jpg")}
+            src={assetPath("/00个人简介/01基本信息/生活照.webp")}
             alt="杨涵"
             containerClassName="w-full h-full"
             className="object-cover"

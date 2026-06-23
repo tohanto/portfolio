@@ -12,7 +12,7 @@ export default function AIPage() {
       {/* Hero image */}
       <div className="relative w-full h-[600px] bg-surface overflow-hidden">
         <LazyImage
-          src={assetPath("/03AI辅助/sunshine/01封面.jpg")}
+          src={assetPath("/03AI辅助/sunshine/01封面.webp")}
           alt="AI辅助"
           containerClassName="w-full h-full"
         />
