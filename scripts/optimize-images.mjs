@@ -14,9 +14,9 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const PUBLIC_DIR = join(__dirname, '..', 'public');
-const MAX_WIDTH = 1920;
-const JPG_QUALITY = 82;
-const MIN_SIZE_KB = 200; // skip already-small files
+const MAX_WIDTH = 1600;
+const JPG_QUALITY = 72;
+const MIN_SIZE_KB = 50; // skip only very small files
 
 const IMAGE_EXTENSIONS = new Set(['.jpg', '.jpeg', '.png']);
 
@@ -67,7 +67,7 @@ async function optimizeImage(filePath) {
     const hasAlpha = metadata.channels === 4;
     if (hasAlpha) {
       // Keep as PNG, use palette compression
-      pipeline = pipeline.png({ palette: true, quality: 90, effort: 6 });
+      pipeline = pipeline.png({ palette: true, quality: 75, effort: 10, compressionLevel: 9 });
     } else {
       // Convert to JPG — much smaller
       pipeline = pipeline.jpeg({ quality: JPG_QUALITY, mozjpeg: true });
@@ -92,7 +92,7 @@ async function optimizeImage(filePath) {
     // Actually, it's safer to keep the PNG extension and use png output with high compression
     pipeline = sharp(filePath)
       .resize(metadata.width > MAX_WIDTH ? MAX_WIDTH : null, null, { withoutEnlargement: true })
-      .png({ palette: true, quality: 80, effort: 8, compressionLevel: 9 });
+      .png({ palette: true, quality: 65, effort: 10, compressionLevel: 9 });
     const pngOptimized = await pipeline.toBuffer();
     const pngSaved = originalStats.size - pngOptimized.length;
     const pngSavedPercent = ((pngSaved / originalStats.size) * 100).toFixed(0);
