@@ -44,11 +44,11 @@ const artItems: ArtItem[] = transformPaths([
   { id: 'painting-13', src: '/04视觉艺术/绘画/13.jpg', alt: '绘画作品13', filter: '绘画', aspectRatio: 3/4 },
   { id: 'painting-14', src: '/04视觉艺术/绘画/14.jpg', alt: '绘画作品14', filter: '绘画', aspectRatio: 3/4 },
   // 摄影 (3 items)
-  { id: 'photo-1', src: '/04视觉艺术/摄影/sy1.png', alt: '摄影作品1', filter: '摄影', aspectRatio: 4/3 },
-  { id: 'photo-2', src: '/04视觉艺术/摄影/sy2.png', alt: '摄影作品2', filter: '摄影', aspectRatio: 4/3 },
-  { id: 'photo-3', src: '/04视觉艺术/摄影/sy3.png', alt: '摄影作品3', filter: '摄影', aspectRatio: 4/3 },
+  { id: 'photo-1', src: '/04视觉艺术/摄影/sy1.webp', alt: '摄影作品1', filter: '摄影', aspectRatio: 4/3 },
+  { id: 'photo-2', src: '/04视觉艺术/摄影/sy2.webp', alt: '摄影作品2', filter: '摄影', aspectRatio: 4/3 },
+  { id: 'photo-3', src: '/04视觉艺术/摄影/sy3.webp', alt: '摄影作品3', filter: '摄影', aspectRatio: 4/3 },
   // 海报设计 (1 item)
-  { id: 'poster-1', src: '/04视觉艺术/海报设计/文创海报.png', alt: '文创海报设计', filter: '海报设计', aspectRatio: 2/3 },
+  { id: 'poster-1', src: '/04视觉艺术/海报设计/文创海报.webp', alt: '文创海报设计', filter: '海报设计', aspectRatio: 2/3 },
 ]);
 
 export function useProjectData() {

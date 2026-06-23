@@ -4,10 +4,10 @@ import SplitText from '@/components/ui/SplitText';
 import { assetPath } from '@/utils/assetPath';
 
 const HERO_IMAGES = [
-  assetPath('/01建筑设计/04绿色高层设计/封面2.png'),
-  assetPath('/02游戏设计/shining/封面.png'),
+  assetPath('/01建筑设计/04绿色高层设计/封面2.webp'),
+  assetPath('/02游戏设计/shining/封面.webp'),
   assetPath('/03AI辅助/sunshine/01封面.jpg'),
-  assetPath('/04视觉艺术/海报设计/文创海报.png'),
+  assetPath('/04视觉艺术/海报设计/文创海报.webp'),
 ];
 
 /* object-position for each image — shift content toward its visible clip wedge */

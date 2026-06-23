@@ -9,10 +9,10 @@ import { assetPath } from '@/utils/assetPath';
 const FILTER_OPTIONS: ArtFilter[] = ['全部', '绘画', '摄影', '海报设计'];
 
 const HERO_IMAGES = [
-  assetPath('/04视觉艺术/海报设计/文创海报.png'),
+  assetPath('/04视觉艺术/海报设计/文创海报.webp'),
   assetPath('/04视觉艺术/绘画/1.jpg'),
   assetPath('/04视觉艺术/绘画/9.jpg'),
-  assetPath('/04视觉艺术/摄影/sy2.png'),
+  assetPath('/04视觉艺术/摄影/sy2.webp'),
 ];
 
 export default function ArtPage() {

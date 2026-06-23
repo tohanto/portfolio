@@ -12,7 +12,7 @@ export default function GamesPage() {
       {/* Hero image */}
       <div className="relative w-full h-[600px] bg-surface overflow-hidden">
         <LazyImage
-          src={assetPath("/02游戏设计/shining/封面.png")}
+          src={assetPath("/02游戏设计/shining/封面.webp")}
           alt="游戏设计"
           containerClassName="w-full h-full"
         />

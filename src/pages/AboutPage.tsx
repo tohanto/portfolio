@@ -136,7 +136,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <div className="w-[45%] max-lg:w-full shrink-0 h-[300px] max-lg:h-48 rounded-lg overflow-hidden">
-                <LazyImage src={assetPath("/00个人简介/03实践经历/平台.png")} alt="智能城市设计平台" containerClassName="w-full h-full" className="object-cover" />
+                <LazyImage src={assetPath("/00个人简介/03实践经历/平台.webp")} alt="智能城市设计平台" containerClassName="w-full h-full" className="object-cover" />
               </div>
             </div>
           </div>
@@ -180,7 +180,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <Link to="/architecture/qing-song" className="w-[45%] max-lg:w-full shrink-0 h-[300px] max-lg:h-48 rounded-lg overflow-hidden block">
-                <LazyImage src={assetPath("/01建筑设计/01轻宋产品手册/封面.png")} alt="轻宋产品手册" containerClassName="w-full h-full" className="object-cover hover:opacity-90 transition-opacity" />
+                <LazyImage src={assetPath("/01建筑设计/01轻宋产品手册/封面.webp")} alt="轻宋产品手册" containerClassName="w-full h-full" className="object-cover hover:opacity-90 transition-opacity" />
               </Link>
             </div>
           </div>
@@ -208,7 +208,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <Link to="/games/shining-wandering" className="w-[45%] max-lg:w-full shrink-0 h-[300px] max-lg:h-48 rounded-lg overflow-hidden block">
-                <LazyImage src={assetPath("/02游戏设计/shining/封面.png")} alt="闪灵场景还原" containerClassName="w-full h-full" className="object-cover hover:opacity-90 transition-opacity" />
+                <LazyImage src={assetPath("/02游戏设计/shining/封面.webp")} alt="闪灵场景还原" containerClassName="w-full h-full" className="object-cover hover:opacity-90 transition-opacity" />
               </Link>
             </div>
           </div>

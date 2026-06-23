@@ -20,7 +20,7 @@ const FEATURED = [
     label: '建筑设计',
     title: '地产公司轻宋产品手册制作',
     description: '宋式美学现代转译，打造适配现代人居的轻宋风格地产产品标准化手册。',
-    cover: assetPath('/01建筑设计/01轻宋产品手册/封面.png'),
+    cover: assetPath('/01建筑设计/01轻宋产品手册/封面.webp'),
   },
   {
     id: 'shining-wandering',
@@ -28,7 +28,7 @@ const FEATURED = [
     label: '游戏设计',
     title: '《闪灵》场景还原与空间漫游demo',
     description: '复刻经典电影的标志性建筑空间，搭建空间漫游demo，在沉浸式探索中重构空间的叙事张力。',
-    cover: assetPath('/02游戏设计/shining/封面.png'),
+    cover: assetPath('/02游戏设计/shining/封面.webp'),
   },
   {
     id: 'ai-recruitment',
