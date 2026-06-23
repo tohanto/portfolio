@@ -36,7 +36,7 @@ const FEATURED = [
     label: 'AI辅助',
     title: 'AI人才招聘游戏方案设计demo',
     description: '利用生成式AI工具驱动的游戏化群面招聘方案设计，重构人才招聘的互动体验。',
-    cover: assetPath('/03AI辅助/sunshine/01封面.jpg'),
+    cover: assetPath('/03AI辅助/sunshine/01封面.webp'),
   },
 ];
 
